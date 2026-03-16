@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Scrawl AI</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; color: #1a1a1a; line-height: 1.6; }
+        h1 { color: #1A3A5C; font-size: 28px; }
+        h2 { color: #1A3A5C; font-size: 20px; margin-top: 32px; }
+        h3 { font-size: 16px; margin-top: 24px; }
+        p, li { font-size: 15px; }
+        ul { padding-left: 20px; }
+        .updated { color: #666; font-size: 13px; }
+        a { color: #1A3A5C; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 16, 2026</p>
+
+    <p>Scrawl AI ("Scrawl," "we," "us," or "our") operates the Scrawl mobile application and web application (the "Service"). This Privacy Policy explains how we collect, use, and protect your information when you use our Service.</p>
+
+    <h2>1. Information We Collect</h2>
+
+    <h3>Account Information</h3>
+    <ul>
+        <li><strong>Email address</strong> — collected when you sign up with email, Apple Sign-In, or Google Sign-In. Used for authentication and account recovery.</li>
+        <li><strong>Password (hashed)</strong> — if you register with email. We store only a bcrypt hash; we never store or see your plaintext password.</li>
+        <li><strong>Authentication provider ID</strong> — a unique identifier from Apple or Google used to link your account.</li>
+    </ul>
+
+    <h3>Content You Submit</h3>
+    <ul>
+        <li><strong>Homework images and text</strong> — uploaded when you use the solve feature. Images are sent to third-party AI services (see Section 3) for processing, then deleted from our servers within 7 days. The resulting PDF solutions are stored on your device permanently.</li>
+    </ul>
+
+    <h3>Connected Services</h3>
+    <ul>
+        <li><strong>Canvas LMS access token</strong> — if you choose to connect your Canvas account. This token is encrypted at rest using AES-256 symmetric encryption and is used solely to fetch your upcoming assignments. We never access your grades, submissions, or other Canvas data.</li>
+    </ul>
+
+    <h3>Device and Usage Information</h3>
+    <ul>
+        <li><strong>Device push token</strong> — used to send you notifications when your homework solution is ready.</li>
+        <li><strong>Subscription status</strong> — your current plan tier, managed through Apple's App Store or our web payment system.</li>
+        <li><strong>Solve history</strong> — a record of solve requests (tier used, subject category, timestamp) for your account dashboard. We do not store the content of your homework after processing.</li>
+    </ul>
+
+    <h3>Information We Do NOT Collect</h3>
+    <ul>
+        <li>Location data</li>
+        <li>Contacts</li>
+        <li>Browsing history</li>
+        <li>Device identifiers for advertising</li>
+        <li>Health or financial data</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+        <li><strong>Provide the Service</strong> — process your homework, generate handwritten-style PDF solutions, and deliver them to you.</li>
+        <li><strong>Account management</strong> — authenticate you, manage your subscription, and enable account recovery.</li>
+        <li><strong>Notifications</strong> — send push notifications when your solution is ready.</li>
+        <li><strong>Canvas integration</strong> — fetch your upcoming assignments if you connect Canvas.</li>
+    </ul>
+    <p>We do not sell your personal information. We do not use your data for advertising. We do not use your homework content for training AI models.</p>
+
+    <h2>3. Third-Party AI Services</h2>
+    <p>To solve your homework, we send your uploaded images and text to the following AI providers:</p>
+    <ul>
+        <li><strong>Google (Gemini API)</strong> — for Balanced and Deep tier solves. Subject to <a href="https://ai.google.dev/terms">Google's AI Terms of Service</a>.</li>
+        <li><strong>Anthropic (Claude API)</strong> — for Expert and Einstein tier solves. Subject to <a href="https://www.anthropic.com/policies/terms-of-service">Anthropic's Terms of Service</a>.</li>
+    </ul>
+    <p>Both providers process your data to generate solutions and do not use your content to train their models under their commercial API terms. Your homework content is not retained by these providers beyond the time needed to process your request.</p>
+
+    <h2>4. Data Retention</h2>
+    <ul>
+        <li><strong>Homework images</strong> — deleted from our servers within 7 days of processing.</li>
+        <li><strong>PDF solutions</strong> — stored on your device. Server copies are deleted within 7 days.</li>
+        <li><strong>Account data</strong> — retained as long as your account is active.</li>
+        <li><strong>Canvas tokens</strong> — retained until you disconnect Canvas or delete your account.</li>
+    </ul>
+
+    <h2>5. Data Security</h2>
+    <p>We protect your data using:</p>
+    <ul>
+        <li>HTTPS encryption for all data in transit</li>
+        <li>bcrypt hashing for passwords</li>
+        <li>AES-256 (Fernet) encryption for Canvas tokens at rest</li>
+        <li>SHA-256 hashing for password reset codes</li>
+        <li>JWT authentication with 30-day expiry</li>
+    </ul>
+
+    <h2>6. Your Rights</h2>
+
+    <h3>All Users</h3>
+    <ul>
+        <li><strong>Access</strong> — you can view your account data in the app's Settings.</li>
+        <li><strong>Deletion</strong> — you can delete your account from within the app (Settings → Delete Account). This permanently removes all your data from our servers.</li>
+        <li><strong>Disconnect Canvas</strong> — you can remove your Canvas connection at any time in Settings.</li>
+    </ul>
+
+    <h3>European Economic Area (GDPR)</h3>
+    <p>If you are in the EEA, you have additional rights including the right to access, rectify, port, and erase your personal data, and to object to or restrict processing. Our legal basis for processing is:</p>
+    <ul>
+        <li><strong>Contract performance</strong> — processing necessary to provide the Service you signed up for.</li>
+        <li><strong>Legitimate interest</strong> — solving and delivering your homework solutions.</li>
+    </ul>
+    <p>To exercise your GDPR rights, contact us at the email below.</p>
+
+    <h3>California (CCPA)</h3>
+    <p>If you are a California resident, you have the right to know what personal information we collect, request its deletion, and opt out of its sale. We do not sell personal information.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Scrawl is intended for users aged 18 and older (college and university students). We do not knowingly collect personal information from children under 13. If we learn we have collected data from a child under 13, we will delete it promptly. If you believe a child has provided us with personal information, please contact us.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy in the app and updating the "Last updated" date above.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or want to exercise your data rights, contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@scrawlai.com">support@scrawlai.com</a></p>
+</body>
+</html>
