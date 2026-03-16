@@ -19,106 +19,174 @@
     <h1>Privacy Policy</h1>
     <p class="updated">Last updated: March 16, 2026</p>
 
-    <p>Scrawl AI ("Scrawl," "we," "us," or "our") operates the Scrawl mobile application and web application (the "Service"). This Privacy Policy explains how we collect, use, and protect your information when you use our Service.</p>
+    <p>Scrawl AI ("Scrawl," "we," "us," or "our") operates the Scrawl mobile application and web application (collectively, the "Service"). This Privacy Policy describes how we collect, use, disclose, and otherwise process your personal information when you use our Service, and explains the rights and choices available to you with respect to your information. By accessing or using the Service, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with this Privacy Policy, you must not access or use the Service.</p>
 
     <h2>1. Information We Collect</h2>
 
-    <h3>Account Information</h3>
+    <p>We collect information that you provide directly to us, information we obtain automatically when you use the Service, and information from third-party sources as described below.</p>
+
+    <h3>1.1 Account Information</h3>
     <ul>
-        <li><strong>Email address</strong> — collected when you sign up with email, Apple Sign-In, or Google Sign-In. Used for authentication and account recovery.</li>
-        <li><strong>Password (hashed)</strong> — if you register with email. We store only a bcrypt hash; we never store or see your plaintext password.</li>
+        <li><strong>Email address</strong> — collected when you sign up with email, Apple Sign-In, or Google Sign-In. Used for authentication, account recovery, and service-related communications.</li>
+        <li><strong>Password (hashed)</strong> — if you register with email. We store only a bcrypt hash; we never store or have access to your plaintext password.</li>
         <li><strong>Authentication provider ID</strong> — a unique identifier from Apple or Google used to link your account.</li>
+        <li><strong>Name</strong> — if provided by your authentication provider (e.g., first name from Apple Sign-In). Used for personalization within the Service.</li>
     </ul>
 
-    <h3>Content You Submit</h3>
+    <h3>1.2 Content You Submit</h3>
     <ul>
-        <li><strong>Homework images and text</strong> — uploaded when you use the solve feature. Images are sent to third-party AI services (see Section 3) for processing, then deleted from our servers within 7 days. The resulting PDF solutions are stored on your device permanently.</li>
+        <li><strong>Homework images, documents, and text</strong> — uploaded when you use the solve feature. This content is transmitted to third-party AI services (see Section 3) for processing and is deleted from our servers within 7 days of processing. The resulting PDF solutions are stored locally on your device.</li>
     </ul>
 
-    <h3>Connected Services</h3>
+    <h3>1.3 Connected Services</h3>
     <ul>
-        <li><strong>Canvas LMS access token</strong> — if you choose to connect your Canvas account. This token is encrypted at rest using AES-256 symmetric encryption and is used solely to fetch your upcoming assignments. We never access your grades, submissions, or other Canvas data.</li>
+        <li><strong>Canvas LMS access token</strong> — if you choose to connect your Canvas account. This token is encrypted at rest using AES-256 symmetric encryption and is used solely to retrieve your upcoming assignment information. We do not access your grades, submissions, course content, or other Canvas data beyond assignment listings.</li>
     </ul>
 
-    <h3>Device and Usage Information</h3>
+    <h3>1.4 Device and Usage Information</h3>
     <ul>
-        <li><strong>Device push token</strong> — used to send you notifications when your homework solution is ready.</li>
-        <li><strong>Subscription status</strong> — your current plan tier, managed through Apple's App Store or our web payment system.</li>
-        <li><strong>Solve history</strong> — a record of solve requests (tier used, subject category, timestamp) for your account dashboard. We do not store the content of your homework after processing.</li>
+        <li><strong>Device push token</strong> — used to send you push notifications when your homework solution is ready for download.</li>
+        <li><strong>Subscription and transaction data</strong> — your current subscription plan tier and payment status, managed through Apple's App Store or our web payment system.</li>
+        <li><strong>Solve history metadata</strong> — a record of solve requests including the AI tier used, subject category, page count, and timestamp. This metadata is used to display your dashboard and enforce usage limits. We do not retain the content of your homework submissions after processing is complete.</li>
+        <li><strong>Log data</strong> — our servers automatically record information about how you interact with the Service, including request timestamps, API endpoints accessed, response times, and error codes. This information is used for debugging, performance monitoring, and maintaining the security of the Service.</li>
     </ul>
 
-    <h3>Information We Do NOT Collect</h3>
+    <h3>1.5 Information We Do NOT Collect</h3>
     <ul>
-        <li>Location data</li>
-        <li>Contacts</li>
-        <li>Browsing history</li>
-        <li>Device identifiers for advertising</li>
-        <li>Health or financial data</li>
+        <li>Precise or coarse location data</li>
+        <li>Contacts or address book data</li>
+        <li>Browsing history or web activity outside the Service</li>
+        <li>Device identifiers for advertising or cross-app tracking</li>
+        <li>Health, fitness, or biometric data</li>
+        <li>Financial information (payment processing is handled entirely by Apple or Stripe)</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
     <ul>
-        <li><strong>Provide the Service</strong> — process your homework, generate handwritten-style PDF solutions, and deliver them to you.</li>
-        <li><strong>Account management</strong> — authenticate you, manage your subscription, and enable account recovery.</li>
-        <li><strong>Notifications</strong> — send push notifications when your solution is ready.</li>
-        <li><strong>Canvas integration</strong> — fetch your upcoming assignments if you connect Canvas.</li>
+        <li><strong>Provide and operate the Service</strong> — process your homework submissions, generate handwritten-style PDF solutions, and deliver them to you.</li>
+        <li><strong>Account management</strong> — create and manage your account, authenticate your identity, and process subscription transactions.</li>
+        <li><strong>Communications</strong> — send push notifications when your solution is ready, and send transactional emails such as password reset codes. We do not send marketing emails.</li>
+        <li><strong>Canvas integration</strong> — retrieve your upcoming assignments if you choose to connect your Canvas account.</li>
+        <li><strong>Improve the Service</strong> — analyze aggregate usage patterns to improve performance, fix bugs, and develop new features. We do not use your homework content for this purpose.</li>
+        <li><strong>Safety and security</strong> — detect and prevent fraud, abuse, and security incidents; enforce our Terms of Service; and comply with legal obligations.</li>
+        <li><strong>Legal compliance</strong> — comply with applicable laws, regulations, legal processes, or enforceable governmental requests.</li>
     </ul>
-    <p>We do not sell your personal information. We do not use your data for advertising. We do not use your homework content for training AI models.</p>
+    <p>We do not sell, rent, or trade your personal information to third parties. We do not use your data for targeted advertising. We do not use your homework content to train, improve, or fine-tune any AI models.</p>
 
-    <h2>3. Third-Party AI Services</h2>
-    <p>To solve your homework, we send your uploaded images and text to the following AI providers:</p>
+    <h2>3. Third-Party Service Providers</h2>
+    <p>We share your information with the following categories of third-party service providers, solely to the extent necessary to provide the Service:</p>
+
+    <h3>3.1 AI Processing Providers</h3>
+    <p>To solve your homework, we transmit your uploaded images and text to the following AI providers for processing:</p>
     <ul>
         <li><strong>Google (Gemini API)</strong> — for Balanced and Deep tier solves. Subject to <a href="https://ai.google.dev/terms">Google's AI Terms of Service</a>.</li>
         <li><strong>Anthropic (Claude API)</strong> — for Expert and Einstein tier solves. Subject to <a href="https://www.anthropic.com/policies/terms-of-service">Anthropic's Terms of Service</a>.</li>
     </ul>
-    <p>Both providers process your data to generate solutions and do not use your content to train their models under their commercial API terms. Your homework content is not retained by these providers beyond the time needed to process your request.</p>
+    <p>Under their respective commercial API terms, these providers process your data solely to generate responses to your requests and do not use your content to train their general-purpose AI models. Your homework content is not retained by these providers beyond the time reasonably necessary to process your request and comply with their legal obligations.</p>
+
+    <h3>3.2 Infrastructure Providers</h3>
+    <ul>
+        <li><strong>Fly.io</strong> — cloud hosting infrastructure where our backend servers run.</li>
+        <li><strong>Resend</strong> — email delivery service used for password reset codes and transactional emails.</li>
+        <li><strong>Apple (App Store, APNs)</strong> — subscription payment processing and push notification delivery.</li>
+    </ul>
+
+    <h3>3.3 Other Disclosures</h3>
+    <p>We may disclose your information if required to do so by law or in the good faith belief that such action is necessary to: (a) comply with a legal obligation, court order, or legal process; (b) protect and defend the rights or property of Scrawl AI; (c) prevent or investigate possible wrongdoing in connection with the Service; (d) protect the personal safety of users of the Service or the public; or (e) protect against legal liability.</p>
 
     <h2>4. Data Retention</h2>
+    <p>We retain your information only for as long as necessary to fulfill the purposes described in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
     <ul>
-        <li><strong>Homework images</strong> — deleted from our servers within 7 days of processing.</li>
-        <li><strong>PDF solutions</strong> — stored on your device. Server copies are deleted within 7 days.</li>
-        <li><strong>Account data</strong> — retained as long as your account is active.</li>
-        <li><strong>Canvas tokens</strong> — retained until you disconnect Canvas or delete your account.</li>
+        <li><strong>Homework images and uploaded content</strong> — deleted from our servers within 7 days of processing completion.</li>
+        <li><strong>PDF solutions</strong> — stored locally on your device. Server-side copies are deleted within 7 days.</li>
+        <li><strong>Account data</strong> — retained for the duration your account remains active. Upon account deletion, your data is permanently removed within 30 days, except where retention is required by law.</li>
+        <li><strong>Canvas tokens</strong> — retained in encrypted form until you disconnect your Canvas account or delete your Scrawl account, whichever occurs first.</li>
+        <li><strong>Server logs</strong> — retained for up to 90 days for debugging and security purposes, then automatically purged.</li>
     </ul>
 
     <h2>5. Data Security</h2>
-    <p>We protect your data using:</p>
+    <p>We implement commercially reasonable technical and organizational security measures designed to protect your personal information from unauthorized access, disclosure, alteration, and destruction. These measures include, but are not limited to:</p>
     <ul>
-        <li>HTTPS encryption for all data in transit</li>
-        <li>bcrypt hashing for passwords</li>
-        <li>AES-256 (Fernet) encryption for Canvas tokens at rest</li>
-        <li>SHA-256 hashing for password reset codes</li>
-        <li>JWT authentication with 30-day expiry</li>
+        <li>TLS/HTTPS encryption for all data transmitted between your device and our servers</li>
+        <li>bcrypt password hashing with per-user salts</li>
+        <li>AES-256 (Fernet) symmetric encryption for sensitive credentials stored at rest</li>
+        <li>SHA-256 hashing for password reset verification codes</li>
+        <li>JWT-based authentication tokens with automatic 30-day expiry</li>
+        <li>Write-ahead logging (WAL) mode for database integrity</li>
+        <li>Environment-based secret management (secrets are never stored in source code)</li>
+    </ul>
+    <p>However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security. You acknowledge and accept that you transmit information to the Service at your own risk. In the event of a data breach that affects your personal information, we will notify you and any applicable regulatory authorities as required by law.</p>
+
+    <h2>6. International Data Transfers</h2>
+    <p>The Service is operated from the United States. If you access the Service from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States and other jurisdictions where our service providers operate. By using the Service, you consent to the transfer of your information to the United States and other jurisdictions that may not provide the same level of data protection as your home country. Where required by applicable law, we implement appropriate safeguards for such transfers, including standard contractual clauses.</p>
+
+    <h2>7. Your Rights and Choices</h2>
+
+    <h3>7.1 All Users</h3>
+    <ul>
+        <li><strong>Access</strong> — you can view your account data at any time in the app's Settings.</li>
+        <li><strong>Correction</strong> — you can update your account information through the app.</li>
+        <li><strong>Deletion</strong> — you can delete your account from within the app (Settings → Delete Account). This permanently removes all your personal data from our servers, subject to the retention periods described in Section 4.</li>
+        <li><strong>Disconnect Canvas</strong> — you can remove your Canvas LMS connection at any time in Settings, which immediately deletes your encrypted Canvas token.</li>
+        <li><strong>Push notifications</strong> — you can disable push notifications through your device's system settings at any time.</li>
     </ul>
 
-    <h2>6. Your Rights</h2>
-
-    <h3>All Users</h3>
+    <h3>7.2 European Economic Area Residents (GDPR)</h3>
+    <p>If you are located in the European Economic Area ("EEA"), United Kingdom, or Switzerland, you have additional rights under the General Data Protection Regulation ("GDPR") and similar laws, including:</p>
     <ul>
-        <li><strong>Access</strong> — you can view your account data in the app's Settings.</li>
-        <li><strong>Deletion</strong> — you can delete your account from within the app (Settings → Delete Account). This permanently removes all your data from our servers.</li>
-        <li><strong>Disconnect Canvas</strong> — you can remove your Canvas connection at any time in Settings.</li>
+        <li>The right to access your personal data and obtain a copy of it</li>
+        <li>The right to rectification of inaccurate personal data</li>
+        <li>The right to erasure ("right to be forgotten")</li>
+        <li>The right to restriction of processing</li>
+        <li>The right to data portability</li>
+        <li>The right to object to processing based on legitimate interests</li>
+        <li>The right to withdraw consent at any time (where processing is based on consent)</li>
+        <li>The right to lodge a complaint with a supervisory authority</li>
     </ul>
-
-    <h3>European Economic Area (GDPR)</h3>
-    <p>If you are in the EEA, you have additional rights including the right to access, rectify, port, and erase your personal data, and to object to or restrict processing. Our legal basis for processing is:</p>
+    <p>Our legal bases for processing your personal data are:</p>
     <ul>
-        <li><strong>Contract performance</strong> — processing necessary to provide the Service you signed up for.</li>
-        <li><strong>Legitimate interest</strong> — solving and delivering your homework solutions.</li>
+        <li><strong>Performance of a contract</strong> — processing necessary to provide the Service you have signed up for (Article 6(1)(b) GDPR).</li>
+        <li><strong>Legitimate interests</strong> — processing necessary for our legitimate interests in operating and improving the Service, provided such interests are not overridden by your data protection rights (Article 6(1)(f) GDPR).</li>
+        <li><strong>Legal obligation</strong> — processing necessary to comply with a legal obligation to which we are subject (Article 6(1)(c) GDPR).</li>
     </ul>
-    <p>To exercise your GDPR rights, contact us at the email below.</p>
+    <p>To exercise any of these rights, please contact us at the email address provided below. We will respond to your request within 30 days.</p>
 
-    <h3>California (CCPA)</h3>
-    <p>If you are a California resident, you have the right to know what personal information we collect, request its deletion, and opt out of its sale. We do not sell personal information.</p>
+    <h3>7.3 California Residents (CCPA/CPRA)</h3>
+    <p>If you are a California resident, the California Consumer Privacy Act ("CCPA") and California Privacy Rights Act ("CPRA") provide you with specific rights regarding your personal information, including:</p>
+    <ul>
+        <li>The right to know what categories and specific pieces of personal information we have collected about you</li>
+        <li>The right to request deletion of your personal information</li>
+        <li>The right to opt out of the sale or sharing of your personal information</li>
+        <li>The right to correct inaccurate personal information</li>
+        <li>The right to limit use and disclosure of sensitive personal information</li>
+        <li>The right to non-discrimination for exercising your privacy rights</li>
+    </ul>
+    <p><strong>We do not sell or share your personal information</strong> as those terms are defined under the CCPA/CPRA. We do not use or disclose sensitive personal information for purposes other than those permitted under the CCPA/CPRA.</p>
+    <p>To exercise your CCPA/CPRA rights, contact us at the email address below or use the account deletion feature within the app.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Scrawl is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we learn we have collected data from a child under 13, we will delete it promptly. If you believe a child has provided us with personal information, please contact us.</p>
+    <h3>7.4 Other Jurisdictions</h3>
+    <p>If you are located in a jurisdiction with data protection laws that grant you specific rights regarding your personal information (including but not limited to Brazil's LGPD, Canada's PIPEDA, Australia's Privacy Act, or Japan's APPI), we will honor those rights to the extent required by applicable law. Please contact us to exercise your rights.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy in the app and updating the "Last updated" date above.</p>
+    <h2>8. Cookies and Tracking Technologies</h2>
+    <p>The Scrawl mobile application does not use cookies. Our web application may use strictly necessary cookies for session management and authentication. We do not use advertising cookies, analytics cookies, or any third-party tracking technologies. We do not participate in cross-app or cross-site tracking.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have questions about this Privacy Policy or want to exercise your data rights, contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:scrawl.ai@gmail.com">scrawl.ai@gmail.com</a></p>
+    <h2>9. Do Not Track</h2>
+    <p>The Service does not respond to "Do Not Track" signals because we do not track users across third-party websites or services. As described above, we do not use cookies for tracking or advertising purposes.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Scrawl is intended for users aged 13 and older. We do not knowingly collect, use, or disclose personal information from children under the age of 13. If you are a parent or guardian and believe that your child under 13 has provided us with personal information, please contact us immediately. If we become aware that we have collected personal information from a child under 13 without verification of parental consent, we will take steps to delete that information from our servers within a reasonable time.</p>
+
+    <h2>11. Third-Party Links and Services</h2>
+    <p>The Service may contain links to third-party websites, applications, or services that are not operated by us (including Canvas LMS, Apple App Store, and Google services). We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services. We strongly advise you to review the privacy policy of every site you visit or service you use.</p>
+
+    <h2>12. Changes to This Privacy Policy</h2>
+    <p>We reserve the right to update or modify this Privacy Policy at any time and from time to time. We will notify you of any material changes by posting the updated Privacy Policy within the Service, updating the "Last updated" date at the top of this page, and, where required by applicable law, sending you a notification. Your continued use of the Service after any changes to this Privacy Policy constitutes your acceptance of the revised Privacy Policy. We encourage you to review this Privacy Policy periodically for any changes.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy, our data practices, or your personal information, please contact us at:</p>
+    <p><strong>Scrawl AI</strong><br>
+    Email: <a href="mailto:scrawl.ai@gmail.com">scrawl.ai@gmail.com</a></p>
+    <p>We will make every effort to respond to your inquiry within 30 days.</p>
 </body>
 </html>
